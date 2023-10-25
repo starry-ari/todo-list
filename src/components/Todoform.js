@@ -4,7 +4,7 @@ import React, {useState} from 'react'
 export const Todoform = ({addTodo}) => {
     const [val, setVal] = useState("")
     const handleSubmit = e => {
-      e.preventReload();
+      e.preventDefault();
       addTodo(val)
     }
   return (
